@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      p::first-line {
+        color: brown;
+        font-weight: bold;
+      }
+
+      p::first-letter {
+        color: green;
+        font-size: 50px;
+        font-family: cursive;
+      }
+
+      h1::before {
+        content: "🍁";
+      }
+
+      h1::after {
+        content: "🍂";
+      }
+
+      label::after {
+        content: "*";
+        color: red;
+      }
+
+      p::selection {
+        background-color: black;
+        color: white;
+      }
+
+      input[type="text"]::placeholder {
+        color: green;
+      }
+      input[type="password"]::placeholder {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- selector::psudoElements{property:value} -->
+
+    <h1>Devanshu Sir</h1>
+
+    <label for="">Firstname</label>
+    <input type="text" name="" id="" placeholder="FirstName" />
+    <input type="password" name="" id="" placeholder="Password" />
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium,😐
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+      excepturi! Maiores harum molestiae odit labore, expedita eaque id
+      aspernatur veritatis, facere accusantium aliquid quidem, nisi architecto
+      sit cupiditate. Eum, quibusdam! saepe!
+    </p>
+  </body>
+</html>
