@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Syntax 
+    
+    @media (condition){
+
+    }
+    
+    -->
+
+    <style>
+      p {
+        color: white;
+        background-color: brown;
+      }
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+
+      @media (min-width: 700px) {
+        p {
+          background-color: green;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          color: green;
+        }
+      }
+
+      @media (min-width: 481px) and (max-width: 768px) {
+        h1 {
+          color: brown;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 1279px) {
+        h1 {
+          color: darkolivegreen;
+        }
+      }
+
+      @media (min-width: 1280px) {
+        h1 {
+          color: darkgoldenrod;
+          font-size: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
+      libero animi, aliquid quidem consequatur facilis quia. Aliquid magnam
+      commodi veritatis.
+    </p>
+
+    <h1>Devanshu Sir😍</h1>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .box1 {
+      border: 4px solid black;
+      margin: 80px;
+      width: 500px;
+      height: 500px;
+      border-radius: 100%;
+      animation-name: run;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    .box2 {
+      background-color: black;
+      width: 150px;
+      height: 150px;
+      border-radius: 100%;
+    }
+
+    @keyframes run {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    /* 
+    img {
+      margin: 100px;
+      animation-name: spider;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    } */
+
+    @keyframes spider {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1.8);
+      }
+    }
+
+    p {
+      font-weight: bold;
+      font-size: 25px;
+      animation-name: marquee;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes marquee {
+      from {
+        margin-left: 100%;
+        width: 200%;
+      }
+      to {
+        margin-left: 0px;
+        width: 100%;
+        color: green;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      color: green;
+      animation-name: fade_in;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes fade_in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .loading {
+      width: 40px;
+      height: 40px;
+      border: 5px solid green;
+      border-top: 5px solid white;
+      border-radius: 100%;
+      animation-name: spin;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-delay: 3s;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <body>
+    <h1>Devanshu Sir 😍</h1>
+
+    <div class="loading"></div>
+
+    <!-- <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod asperiores
+      eveniet voluptates earum suscipit quaerat voluptate temporibus quidem
+      cupiditate quas.
+    </p> -->
+
+    <div class="box1">
+      <div class="box2">
+        <img src="./media/spider.png" alt="" width="100%" />
+      </div>
+    </div>
+
+    <img src="./media/spider.png" alt="" width="200px" />
+  </body>
+</html>

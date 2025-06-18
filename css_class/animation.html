@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        background-color: brown;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin: 20px;
+        text-align: center;
+        padding: 30px;
+        box-sizing: border-box;
+        font-weight: bold;
+        animation-name: changeColor;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes changeColor {
+        from {
+          background-color: blue;
+          color: white;
+          box-shadow: 0 0 20px 10px black;
+        }
+
+        to {
+          background-color: chartreuse;
+          color: deeppink;
+          box-shadow: 0 0 20px 10px rgb(222, 18, 18);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Box1</div>
+  </body>
+</html>

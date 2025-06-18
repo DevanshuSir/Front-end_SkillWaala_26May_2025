@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box > div {
+        /* background-color: brown; */
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        border-radius: 100%;
+        position: relative;
+        animation-name: run;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+
+      .box1 {
+        animation-timing-function: ease;
+        background-color: aquamarine;
+      }
+      .box2 {
+        animation-timing-function: linear;
+        background-color: brown;
+      }
+
+      .box3 {
+        animation-timing-function: ease-in;
+        background-color: blue;
+      }
+
+      .box4 {
+        animation-timing-function: ease-out;
+        background-color: cadetblue;
+      }
+      .box5 {
+        animation-timing-function: ease-in-out;
+        background-color: coral;
+      }
+
+      @keyframes run {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <div class="box5"></div>
+    </div>
+  </body>
+</html>
